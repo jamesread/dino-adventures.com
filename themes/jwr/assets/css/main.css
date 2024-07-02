@@ -11,9 +11,9 @@ header a {
   }
 
 header {
-  background-color: black;
+  background-color: #262626;
+  border-bottom: 2px solid #dee3e7;
   color: white;
-  border-bottom: 1px solid #bbb;
   padding: 1em;
   margin: auto;
 }
