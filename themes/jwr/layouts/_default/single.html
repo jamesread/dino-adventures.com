@@ -1,0 +1,36 @@
+{{ define "header" }}
+{{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<aside class = "currentPage">
+	You are viewing a single post.
+</aside>
+<article>
+	{{ partial "post-header.html" . }}
+
+	<div>
+		{{- .Content -}}
+	</div>
+
+</article>
+
+<div class = "padded-box">
+	{{ if gt (len (.GetTerms "tags")) 0}}
+	<aside>
+		<h3>Tags</h3>
+		{{- partial "tags.html" . -}}
+
+		<div>
+			{{ if .Site.DisqusShortname }}
+			{{ template "_internal/disqus.html" . }}
+			{{ end }}
+		</div>
+	</aside>
+	{{ end }}
+
+	{{- partial "menu-contextual.html" . -}}
+</div>
+
+{{ end }}

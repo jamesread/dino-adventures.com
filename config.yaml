@@ -1,0 +1,34 @@
+baseURL: 'http://dino-adventures.com/'
+languageCode: 'en-us'
+title: 'Dino Adventures'
+theme: "jwr"
+
+menu:
+  main:
+    - name: "Europe"
+      pageRef: '/tags/europe'
+      weight: 1
+        
+    - name: "Asia"
+      pageRef: '/tags/asia'
+      weight: 2
+
+    - name: "America"
+      pageRef: '/tags/america'
+      weight: 3
+
+    - name: 'Africa'
+      pageRef: '/tags/africa'
+      weight: 5
+
+    - name: 'Rules'
+      pageRef: '/pages/rules'
+      weight: 8
+
+
+    - name: 'All Tags'
+      pageRef: '/tags/'
+      weight: 9
+
+author:
+  name:"James & Evie"

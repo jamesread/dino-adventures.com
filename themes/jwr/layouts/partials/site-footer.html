@@ -1,0 +1,7 @@
+<footer role="contentinfo">
+	<p>&copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}</p>
+
+	<div>{{ partial "social-follow.html" . }}</div>
+
+	<aside>No dinosaurs were harmed during the posing of these photos. </aside>
+</footer>
