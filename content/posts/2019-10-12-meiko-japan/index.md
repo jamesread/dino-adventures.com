@@ -1,6 +1,6 @@
 ---
 title: Meiko!, Japan
-date: 2019-10-12
+date: 2019-11-16
 image: cover.jpg
 tags:
     - Asia

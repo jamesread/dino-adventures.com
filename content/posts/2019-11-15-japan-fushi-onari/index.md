@@ -1,6 +1,6 @@
 ---
 title: Fushi Onari, Japan
-date: 2019-11-15
+date: 2019-11-20
 image: cover.jpg
 tags:
     - Japan

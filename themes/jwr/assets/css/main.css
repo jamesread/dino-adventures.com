@@ -97,9 +97,14 @@ article header {
 }
 
 article img.featured {
-  object-fit: cover;
   box-shadow: none;
   margin: 0em auto 0em auto;
+}
+
+article.list img.featured {
+  object-fit: cover;
+  height: 440px;
+  width: 100%;
 }
 
 aside {
