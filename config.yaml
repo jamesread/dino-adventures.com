@@ -16,14 +16,9 @@ menu:
       pageRef: '/tags/america'
       weight: 3
 
-    - name: 'Africa'
-      pageRef: '/tags/africa'
-      weight: 5
-
     - name: 'Rules'
       pageRef: '/pages/rules'
       weight: 8
-
 
     - name: 'All Tags'
       pageRef: '/tags/'
