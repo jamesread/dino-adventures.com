@@ -179,3 +179,15 @@ div.padded-box {
     border-right: 0;
   }
 }
+
+ul.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul.pagination li {
+  display: inline-block;
+  margin-right: 1em;
+}

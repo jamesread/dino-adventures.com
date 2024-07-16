@@ -15,12 +15,16 @@
         {{ end }}
 
       <section>
-        {{ range ($section) }}
+		{{ $paginator := .Paginate ($section) }}
+		{{ range $paginator.Pages }}
+
           <div>
 			{{ partial "post-summary.html" . }}
           </div>
         {{ end }}
       </section>
+
+	  {{ template "_internal/pagination.html" . }}
       </div>
   {{ end }}
 {{ end }}

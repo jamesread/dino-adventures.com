@@ -26,3 +26,6 @@ menu:
 
 author:
   name:"James & Evie"
+
+pagination:
+  pagerSize: 10

@@ -5,7 +5,8 @@ list.html
 		{{- .Content -}}
 	</section>
 	<section>
-		{{ range .Paginator.Pages }}
+		{{ $paginator := .Paginate ($section) }}
+		{{ range $paginator.Pages }}
 		<div>
 			{{ .Render "summary" }}
 		</div>

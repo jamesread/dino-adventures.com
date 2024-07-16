@@ -3,8 +3,12 @@
 <aside class = "currentPage">You are viewing a tag: <strong>{{ .Title }}</strong>.</aside>
 
 <section>
-	{{ range  .Pages }}
+	{{ $paginator := .Paginate (.Pages) }}
+	{{ range $paginator.Pages }}
+
 	{{ partial "post-summary.html" . }}
 	{{ end }}
+
+	{{ template "_internal/pagination.html" . }}
 </section>
 {{ end }}
