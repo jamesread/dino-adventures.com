@@ -1,11 +1,10 @@
 {{ define "main" }}
-list.html
 <article>
 	<section>
 		{{- .Content -}}
 	</section>
 	<section>
-		{{ $paginator := .Paginate ($section) }}
+		{{ $paginator := .Paginate (.Pages) }}
 		{{ range $paginator.Pages }}
 		<div>
 			{{ .Render "summary" }}
