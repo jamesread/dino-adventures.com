@@ -2,3 +2,4 @@
 **/*.swo
 .hugo_build.lock
 resources
+public/
